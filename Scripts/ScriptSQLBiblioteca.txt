@@ -1,0 +1,37 @@
+create table Autores (
+	nome varchar(200),
+  	email varchar(100),
+  	nacionalidade varchar(100),
+  	data_nascimento date
+);
+
+create table Livros (
+	titulo varchar(200),
+  	qtd_paginas varchar(100),
+  	acabamento varchar(100),
+  	editora varchar(100)
+);
+
+INSERT into Autores (nome, email, nacionalidade, data_nascimento) VALUES ('virginia woolf', 'virginia@woolf.com', 'inglesa', '1910-05-01');
+INSERT into Autores (nome, email, nacionalidade, data_nascimento) VALUES ('j k rowling', 'jk@mail.com', 'inglesa', '1962-05-01');
+INSERT into Autores (nome, email, nacionalidade, data_nascimento) VALUES ('ernest hemingway', 'ernest@mail.com', 'americano', '1922-06-03');
+INSERT into Autores (nome, email, nacionalidade, data_nascimento) VALUES ('lord byron', 'byron@mail.com', 'ingles', '1855-07-12');
+INSERT into Autores (nome, email, nacionalidade, data_nascimento) VALUES ('mary shelley', 'mary@mail.com', 'ingles', '1865-01-25');
+
+INSERT INTO Livros (titulo, qtd_paginas, acabamento, editora)
+VALUES ('Harry Potter e a Pedra Filosofal', '223', 'Capa Dura', 'Editora E');
+
+INSERT INTO Livros (titulo, qtd_paginas, acabamento, editora)
+VALUES ('Frankenstein', '280', 'Brochura', 'Editora F');
+
+INSERT INTO Livros (titulo, qtd_paginas, acabamento, editora)
+VALUES ('O Velho e o Mar', '128', 'Capa Dura', 'Editora G');
+
+INSERT INTO Livros (titulo, qtd_paginas, acabamento, editora)
+VALUES ('Mrs. Dalloway', '194', 'Brochura', 'Editora H');
+
+INSERT INTO Livros (titulo, qtd_paginas, acabamento, editora)
+VALUES ('Domínio da Noite', '150', 'Capa Dura', 'Editora I');
+
+SELECT * from Autores;
+SELECT * FROM Livros;

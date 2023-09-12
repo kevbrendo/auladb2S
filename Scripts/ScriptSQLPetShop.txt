@@ -1,0 +1,45 @@
+create table Cliente (
+	nome varchar(200),
+  	cpf varchar(100),
+  	email varchar(100),
+  	telefone varchar(50)
+);
+
+create table Pet (
+	nome varchar(50),
+  	especie varchar(100),
+  	nascimento date
+);
+
+INSERT INTO Cliente (nome, cpf, email, telefone)
+VALUES ('Maria Silva', '123.456.789-01', 'maria@email.com', '(11) 1234-5678');
+
+INSERT INTO Pet (nome, especie, nascimento)
+VALUES ('Rex', 'Cachorro', '2019-05-15');
+
+INSERT INTO Cliente (nome, cpf, email, telefone)
+VALUES ('João Santos', '987.654.321-09', 'joao@email.com', '(22) 9876-5432');
+
+INSERT INTO Pet (nome, especie, nascimento)
+VALUES ('Whiskers', 'Gato', '2020-03-20');
+
+INSERT INTO Cliente (nome, cpf, email, telefone)
+VALUES ('Pedro Oliveira', '456.789.123-45', 'pedro@email.com', '(33) 4567-8901');
+
+INSERT INTO Pet (nome, especie, nascimento)
+VALUES ('Buddy', 'Cachorro', '2018-08-10');
+
+INSERT INTO Cliente (nome, cpf, email, telefone)
+VALUES ('Ana Pereira', '789.123.456-78', 'ana@email.com', '(44) 7890-1234');
+
+INSERT INTO Pet (nome, especie, nascimento)
+VALUES ('Fluffy', 'Coelho', '2021-01-05');
+
+INSERT INTO Cliente (nome, cpf, email, telefone)
+VALUES ('Lucas Rodrigues', '234.567.890-12', 'lucas@email.com', '(55) 2345-6789');
+
+INSERT INTO Pet (nome, especie, nascimento)
+VALUES ('Spike', 'Cachorro', '2017-11-25');
+
+SELECT * FROM Cliente;
+SELECT * FROM Pet;

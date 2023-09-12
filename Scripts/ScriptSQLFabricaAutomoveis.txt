@@ -1,0 +1,33 @@
+create table Montadora (
+	nome varchar(10),
+  	logotipo varchar(100),
+  	site varchar(100)
+);
+
+INSERT INTO Automovel (placa, modelo, ano, nome_montadora)
+VALUES ('ABC-1234', 'Sedan', '2022', 'Montadora A');
+
+INSERT INTO Automovel (placa, modelo, ano, nome_montadora)
+VALUES ('XYZ-5678', 'SUV', '2021', 'Montadora B');
+
+INSERT INTO Automovel (placa, modelo, ano, nome_montadora)
+VALUES ('DEF-9876', 'Hatchback', '2023', 'Montadora C');
+
+INSERT INTO Automovel (placa, modelo, ano, nome_montadora)
+VALUES ('GHI-5432', 'Caminhão', '2020', 'Montadora A');
+
+INSERT INTO Automovel (placa, modelo, ano, nome_montadora)
+VALUES ('JKL-2468', 'SUV', '2022', 'Montadora B');
+
+INSERT INTO Montadora (nome, logotipo, site)
+VALUES ('Montadora A', 'logo1.png', 'www.montadoraA.com');
+
+INSERT INTO Montadora (nome, logotipo, site)
+VALUES ('Montadora B', 'logo2.png', 'www.montadoraB.com');
+
+INSERT INTO Montadora (nome, logotipo, site)
+VALUES ('Montadora C', 'logo3.png', 'www.montadoraC.com');
+
+
+SELECT * from Automovel;
+SELECT * FROM Montadora;

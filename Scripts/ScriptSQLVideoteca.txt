@@ -1,0 +1,46 @@
+create table Filme (
+	titulo varchar(200),
+  	duracao varchar(200),
+  	idioma_original varchar(200),
+  	preco decimal(100,2)
+);
+
+create table Elenco (
+	nome varchar(100),
+  	cargo varchar(100),
+  	data_nascimento date,
+  	nacionalidade varchar(100)
+);
+
+INSERT INTO Filme (titulo, duracao, idioma_original, preco)
+VALUES ('O Poderoso Chefão', '175 minutos', 'Inglês', 19.99);
+
+INSERT INTO Elenco (nome, cargo, data_nascimento, nacionalidade)
+VALUES ('Marlon Brando', 'Ator', '1924-04-03', 'Estados Unidos');
+
+INSERT INTO Filme (titulo, duracao, idioma_original, preco)
+VALUES ('Cidade de Deus', '130 minutos', 'Português', 14.99);
+
+INSERT INTO Elenco (nome, cargo, data_nascimento, nacionalidade)
+VALUES ('Matheus Nachtergaele', 'Ator', '1969-01-03', 'Brasil');
+
+INSERT INTO Filme (titulo, duracao, idioma_original, preco)
+VALUES ('Matrix', '136 minutos', 'Inglês', 12.99);
+
+INSERT INTO Elenco (nome, cargo, data_nascimento, nacionalidade)
+VALUES ('Keanu Reeves', 'Ator', '1964-09-02', 'Canadá');
+
+INSERT INTO Filme (titulo, duracao, idioma_original, preco)
+VALUES ('E o Vento Levou', '238 minutos', 'Inglês', 18.99);
+
+INSERT INTO Elenco (nome, cargo, data_nascimento, nacionalidade)
+VALUES ('Vivien Leigh', 'Atriz', '1913-11-05', 'Reino Unido');
+
+INSERT INTO Filme (titulo, duracao, idioma_original, preco)
+VALUES ('A Origem', '148 minutos', 'Inglês', 16.99);
+
+INSERT INTO Elenco (nome, cargo, data_nascimento, nacionalidade)
+VALUES ('Leonardo DiCaprio', 'Ator', '1974-11-11', 'Estados Unidos');
+
+SELECT * from Filme;
+SELECT * from Elenco;

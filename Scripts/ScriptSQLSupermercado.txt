@@ -1,0 +1,45 @@
+create table Produto (
+	nome varchar(200),
+  	preco decimal(100,2),
+  	qtde_estoque int,
+  	nome_marca varchar(200)
+);
+
+create table Marca (
+	nome varchar(100),
+  	sac varchar(100),
+  	nacionalidade varchar(100)
+);
+
+INSERT INTO Produto (nome, preco, qtde_estoque, nome_marca)
+VALUES ('Notebook Dell XPS 15', 1999.99, 10, 'Dell');
+
+INSERT INTO Marca (nome, sac, nacionalidade)
+VALUES ('Dell', '0800-123-4567', 'Estados Unidos');
+
+INSERT INTO Produto (nome, preco, qtde_estoque, nome_marca)
+VALUES ('Smartphone Samsung Galaxy S22', 999.00, 20, 'Samsung');
+
+INSERT INTO Marca (nome, sac, nacionalidade)
+VALUES ('Samsung', '0800-987-6543', 'Coreia do Sul');
+
+INSERT INTO Produto (nome, preco, qtde_estoque, nome_marca)
+VALUES ('Televisor LG OLED 4K', 1499.99, 15, 'LG');
+
+INSERT INTO Marca (nome, sac, nacionalidade)
+VALUES ('LG', '0800-333-4444', 'Coreia do Sul');
+
+INSERT INTO Produto (nome, preco, qtde_estoque, nome_marca)
+VALUES ('Forno Micro-ondas Panasonic', 199.99, 30, 'Panasonic');
+
+INSERT INTO Marca (nome, sac, nacionalidade)
+VALUES ('Panasonic', '0800-555-6666', 'Japão');
+
+INSERT INTO Produto (nome, preco, qtde_estoque, nome_marca)
+VALUES ('Impressora HP LaserJet Pro', 299.99, 12, 'HP');
+
+INSERT INTO Marca (nome, sac, nacionalidade)
+VALUES ('HP', '0800-777-8888', 'Estados Unidos');
+
+SELECT * from Produto;
+SELECT * from Marca;

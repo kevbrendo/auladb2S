@@ -1,0 +1,15 @@
+CREATE TABLE alunos (
+	ra INT(100),
+  	nome varchar(200),
+  	data_nascimento date,
+  	endereco varchar(4000),
+  	email varchar(200)
+);
+
+INSERT into alunos (ra, nome, data_nascimento, endereco, email) VALUES (222333, 'obi wan', '2000-05-10', 'rua tal do fulano', 'obiwan@gmail.com');
+INSERT into alunos (ra, nome, data_nascimento, endereco, email) VALUES (222334, 'luke', '1999-05-01', 'rua fulano de tam', 'luke@gmail.com');
+INSERT into alunos (ra, nome, data_nascimento, endereco, email) VALUES (222335, 'leia', '1999-05-01', 'rua tal do fulano', 'leia@gmail.com');
+INSERT into alunos (ra, nome, data_nascimento, endereco, email) VALUES (222336, 'darth maul', '2000-05-01', 'rua tal 1212', 'darthmaul@gmail.com');
+INSERT into alunos (ra, nome, data_nascimento, endereco, email) VALUES (222337, 'darth vader', '2000-07-10', 'rua fulano 212', 'darthvader@gmail.com');
+
+SELECT * from alunos;

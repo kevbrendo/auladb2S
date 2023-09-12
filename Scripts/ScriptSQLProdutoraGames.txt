@@ -1,0 +1,45 @@
+create table Desenvolvedor (
+	nome varchar(200),
+  	cpf varchar(100),
+  	nascimento date
+);
+
+create table Projeto (
+	nome varchar(100),
+  	data_lancamento date,
+  	faixa_etaria varchar(50),
+  	genero varchar(50)
+);
+
+INSERT INTO Desenvolvedor (nome, cpf, nascimento)
+VALUES ('João Silva', '123.456.789-01', '1990-05-15');
+
+INSERT INTO Projeto (nome, data_lancamento, faixa_etaria, genero)
+VALUES ('Jogo de Ação', '2022-02-20', '16+', 'Ação');
+
+INSERT INTO Desenvolvedor (nome, cpf, nascimento)
+VALUES ('Maria Souza', '987.654.321-09', '1988-07-10');
+
+INSERT INTO Projeto (nome, data_lancamento, faixa_etaria, genero)
+VALUES ('Jogo de Estratégia', '2021-11-30', '12+', 'Estratégia');
+
+INSERT INTO Desenvolvedor (nome, cpf, nascimento)
+VALUES ('Pedro Santos', '456.789.123-45', '1992-03-25');
+
+INSERT INTO Projeto (nome, data_lancamento, faixa_etaria, genero)
+VALUES ('Jogo de Aventura', '2023-05-05', '10+', 'Aventura');
+
+INSERT INTO Desenvolvedor (nome, cpf, nascimento)
+VALUES ('Ana Oliveira', '789.123.456-78', '1985-09-18');
+
+INSERT INTO Projeto (nome, data_lancamento, faixa_etaria, genero)
+VALUES ('Jogo de Quebra-Cabeça', '2020-08-15', '6+', 'Quebra-Cabeça');
+
+INSERT INTO Desenvolvedor (nome, cpf, nascimento)
+VALUES ('Lucas Pereira', '234.567.890-12', '1993-12-03');
+
+INSERT INTO Projeto (nome, data_lancamento, faixa_etaria, genero)
+VALUES ('Jogo de RPG', '2019-04-10', '14+', 'RPG');
+
+SELECT * from Desenvolvedor;
+SELECT * from Projeto;
